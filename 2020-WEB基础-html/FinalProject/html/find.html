@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一书屋--找书</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/find.css">
+    <link rel="stylesheet" href="../css/public.css">
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            var y = document.forms["myForm"]["email"].value;
+            if (x == null || x == "" || y == null || y == "") {
+                alert("必须全部填写");
+                return false;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- header public.css-->
+    <div class="header inner clearfix">
+        <!-- logo 导航 时间 -->
+        <a class="fl" href="home.html"><img src="../images/logo_02.jpg" alt=""></a>
+        <ul class="fl">
+            <li><a href="home.html">首页</a></li>
+            <li><a href="babooks.html">浏览可用书籍</a></li>
+            <li><a href="find.html">找一本书</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <p class="fr">当前日期：
+            <b id="domo"></b><span>/</span>
+            <b id="demo1"></b><span>/</span>
+            <b id="demo2"></b><span>&nbsp;&nbsp;</span>
+            <b id="demo3"></b><span>:</span>
+            <b id="demo4"></b>
+        </p>
+    </div>
+
+    <!-- main home.css-->
+    <div class="main">
+        <!-- 左侧菜单栏 右侧书店描述 -->
+        <div class="inner clearfix">
+            <!-- 菜单栏 -->
+            <div class="menu fl">
+                <ul>
+                    <li><a href="home.html">首页</a></li>
+                    <li><a href="babooks.html">浏览可用书籍</a></li>
+                    <li><a href="find.html">找一本书</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <!-- 找一本书 -->
+            <div class="content fl">
+                <div class="context">找书</div>
+                <div class="conform clearfix">
+                    <form action="" class="fl" name="myForm" onsubmit="return validateForm();" method="post">
+                        <ul>
+                            <li><span>书名：</span>
+                                <input type="text" placeholder="请输入书名or作者orISSN编号" name="fname">
+                            </li>
+                            <li><span>电子邮件地址：</span>
+                                <input type="text" placeholder="请输入电子邮件地址" name="email">
+                            </li>
+                            <li><input type="reset" value="重置" name="clear" id=""></li>
+                            <li><input type="submit" value="提交" name="" id=""></li>
+                        </ul>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer public.css-->
+    <div class="footer inner">
+        <h3>联系我们</h3>
+        <ul>
+            <li>电话 : 19****85</li>
+            <li>地址 : 山东理工大学</li>
+            <li>电子邮箱 : gverzh@163.com</li>
+        </ul>
+    </div>
+
+    <script>
+        var d = new Date();
+        document.getElementById("domo").innerHTML = d.getFullYear();
+        document.getElementById("demo1").innerHTML = d.getMonth() + 1;
+        document.getElementById("demo2").innerHTML = d.getDate();
+        document.getElementById("demo3").innerHTML = d.getHours();
+        document.getElementById("demo4").innerHTML = d.getMinutes();
+    </script>
+
+</body>
+
+</html>

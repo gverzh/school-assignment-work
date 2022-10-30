@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>一书屋--首页</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/contact.css">
+        <link rel="stylesheet" href="../css/public.css">
+</head>
+
+<body>
+    <!-- header public.css-->
+    <div class="header inner clearfix">
+        <!-- logo 导航 时间 -->
+        <a class="fl" href="home.html"><img src="../images/logo_02.jpg" alt=""></a>
+        <ul class="fl">
+            <li><a href="home.html">首页</a></li>
+            <li><a href="babooks.html">浏览可用书籍</a></li>
+            <li><a href="find.html">找一本书</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <p class="fr">当前日期：
+            <b id="domo"></b><span>/</span>
+            <b id="demo1"></b><span>/</span>
+            <b id="demo2"></b><span>&nbsp;&nbsp;</span>
+            <b id="demo3"></b><span>:</span>
+            <b id="demo4"></b>
+        </p>
+    </div>
+
+    <!-- main home.css-->
+    <div class="main">
+        <!-- 左侧菜单栏 右侧书店描述 -->
+        <div class="inner clearfix">
+            <!-- 菜单栏 -->
+            <div class="menu fl">
+                <ul>
+                    <li><a href="home.html">首页</a></li>
+                    <li><a href="babooks.html">浏览可用书籍</a></li>
+                    <li><a href="find.html">找一本书</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <!-- 书店描述 -->
+            <div class="content fl">
+                <div class="context">联系我们</div>
+                <div class="contactus">
+                    <p>书店版权所有：</p>
+                    <p>姓名：gverzh </p>
+                    <p>学号：19****54</p>
+                    <p>书店联系电话：19****85</p>
+                    <p>邮箱：gverzh@163.com</p>
+                    <p>地址：山东理工大学</p>
+                    <p>工作时间：周一至周五 8：00-20：00</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer public.css-->
+    <div class="footer inner">
+        <h3>联系我们</h3>
+        <ul>
+            <li>电话 : 19****85</li>
+            <li>地址 : 山东理工大学</li>
+            <li>电子邮箱 : gverzh@163.com</li>
+        </ul>
+    </div>
+
+    <script>
+        var d = new Date();
+        document.getElementById("domo").innerHTML = d.getFullYear();
+        document.getElementById("demo1").innerHTML = d.getMonth() + 1;
+        document.getElementById("demo2").innerHTML = d.getDate();
+        document.getElementById("demo3").innerHTML = d.getHours();
+        document.getElementById("demo4").innerHTML = d.getMinutes();
+    </script>
+</body>
+
+
+<!-- < style="text-align:center">
+    <h2>联系我们</h2>
+    <p>书店版权所有：</p>
+    <p>姓名：gverzh</p>
+    <p>学号：19****54</p>
+    <p>书店联系电话：19****85</p>
+    <p>邮箱：gverzh@163.com</p>
+    <p>地址：山东理工大学</p>
+    <p>工作时间：周一至周五 8：00-20：00</p>
+</> -->
+
+</html>

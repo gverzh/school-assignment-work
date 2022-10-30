@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一书屋--首页</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/public.css">
+
+</head>
+
+<body>
+    <!-- header public.css-->
+    <div class="header inner clearfix">
+        <!-- logo 导航 时间 -->
+        <a class="fl" href="home.html"><img src="../images/logo_02.jpg" alt=""></a>
+        <ul class="fl">
+            <li><a href="#">首页</a></li>
+            <li><a href="babooks.html">浏览可用书籍</a></li>
+            <li><a href="find.html">找一本书</a></li>
+            <li><a href="contact.html">联系我们</a></li>
+        </ul>
+        <p class="fr">当前日期：
+            <b id="domo"></b><span>/</span>
+            <b id="demo1"></b><span>/</span>
+            <b id="demo2"></b><span>&nbsp;&nbsp;</span>
+            <b id="demo3"></b><span>:</span>
+            <b id="demo4"></b>
+        </p>
+    </div>
+
+    <!-- main home.css-->
+    <div class="main">
+        <!-- 左侧菜单栏 右侧书店描述 -->
+        <div class="inner clearfix">
+            <!-- 菜单栏 -->
+            <div class="menu fl">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="babooks.html">浏览可用书籍</a></li>
+                    <li><a href="find.html">找一本书</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+            <!-- 书店描述 -->
+            <div class="content fl">
+                <div class="context">书店介绍</div>
+                <div class="contop ">
+                    <div class="contl fl"><img src="../images/content_01.jpg" alt=""></div>
+                    <div class="contr fr">
+                        <p>一书屋位于山东省淄博市的山东理工大学，店铺成立以来发展迅速，业务不断发展壮大。书屋植基于推广阅读、激发创意、深耕文化、提升心灵的理念，致力于打造专注汉语国际教育及中华文化传播的专业书店品牌。成立以来，努力创造出既具本地特色、又具国际视野的文化景观。
+                        </p>
+                    </div>
+                </div>
+                <div class="conbot">
+                    <div class="conbl fl">
+                        <p>一书屋始终认真贯彻执行党和国家的出版方针政策，遵守国家法律、法规，遵守《全国书刊发行业公约》，不经营盗版、假冒、伪书等非法出版物，自觉维护市场秩序。在经营方面从无违法、违规、违章的处罚记录。始终按照《争创首都规范化服务行业》和《中国书店服务质量基础规范管理标准》的要求实行科学、规范管理，落实《中国书店关于各类出版物政治安全审核制度》、《中国书店安全保卫工作规则》等企业管理制度，积极参与公益活动。
+                        </p>
+                    </div>
+                    <div class="conbr fr"><img src="../images/content_02.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer public.css-->
+    <div class="footer inner">
+        <h3>联系我们</h3>
+        <ul>
+            <li>电话 : 19****85</li>
+            <li>地址 : 山东理工大学</li>
+            <li>电子邮箱 : gverzh@163.com</li>
+        </ul>
+    </div>
+
+    <script>
+        var d = new Date();
+        document.getElementById("domo").innerHTML = d.getFullYear();
+        document.getElementById("demo1").innerHTML = d.getMonth() + 1;
+        document.getElementById("demo2").innerHTML = d.getDate();
+        document.getElementById("demo3").innerHTML = d.getHours();
+        document.getElementById("demo4").innerHTML = d.getMinutes();
+    </script>
+
+</body>
+
+</html>
