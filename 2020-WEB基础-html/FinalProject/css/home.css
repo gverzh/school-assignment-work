@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* 内容 */
+.content{
+    width: 900px;
+    border: 2px solid #decbde;
+}
+.content .context{
+    padding-top: 3px;;
+    font-size: 17px;
+    padding-left: 20px;
+    height: 30px;
+    background-color: #f8f1f9;
+    border-bottom: 2px solid #decbde;
+}
+
+.content img{
+    width: 230px;
+    height: 230px;
+}
+.content .contop{
+    height: 230px;
+    
+}
+.content .contl{
+    width: 230px;
+    height: 230px;
+}
+.content .contr{
+    width: 510px;
+    height: 180px;
+    padding:55px 70px 0 0;
+}
+
+.content .conbot{
+    height: 230px;
+}
+.content .conbl{
+    width: 510px;
+    height: 180px;
+    padding: 30px 0 0 70px;
+}
+.content p{
+    line-height: 25px;
+}

@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+
+.content .conform{
+    height: 300px; 
+    margin-top: 50px;
+}
+
+.content form li span{
+    text-align: right;
+    float: left;
+    width: 160px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-top: 20px;
+    
+}
+
+.content form li input[type=text]{
+    float: left;
+    height: 40px;
+    width: 200px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+
+}
+.content form li input[type=reset],
+.content form li input[type=submit]{
+    float: left;
+    height: 42px;
+    width: 80px;
+    font-size: 14px;
+    line-height: 42px;
+    background-color: #f8f1f9;
+    border: 2px solid  #eae6ea;
+    margin-left: 90px;
+    margin-top: 40px;
+}

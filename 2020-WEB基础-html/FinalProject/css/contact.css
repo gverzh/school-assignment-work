@@ -1,0 +1,8 @@
+@charset "utf-8";
+.main .contactus{
+    margin-top: 20px;
+    height: 280px;
+    text-align: center;
+    line-height: 30px;
+}
+.main .contactus p{}

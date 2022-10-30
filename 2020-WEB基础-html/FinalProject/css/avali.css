@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.main .content .title h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.main .content .concon{
+    padding-left: 10px;
+    height: 180px;
+}
+.main .content .title{
+    padding-left: 10px;
+    font-size: 18px;
+    color: #333;
+}
+.main .content .concon img{
+    height: 130px;
+}
+
+.main .content .concon h4,
+.main .content .concon p{
+    padding-left: 3px;
+    width: 200px;
+    font-size: 12px;
+    line-height: 30px;
+        /*单行文本溢出显示省略号*/
+    white-space: nowrap;/*强制不换行*/
+    overflow: hidden; /*溢出隐藏*/
+    text-overflow: ellipsis;/*溢出显示省略号*/
+}
+.main .content .concon h4{
+    font-size: 15px;
+}
+
+.main .content .cault{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.main .content .cault li{
+
+    float: left;
+    padding-right: 30px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.main .content .cault .caubot button{
+    background-color: rgb(227, 204, 228);
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid rgb(209, 168, 212);
+}
